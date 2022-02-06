@@ -1,0 +1,19 @@
+GET  http://localhost:3003/loginsystem/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJyaXpraSBzdWJoYW5kYW5pIiwiZW1haWwiOiJyaXpraTEyM0BnbWFpbC5jb20iLCJpYXQiOjE2NDQxNDg5OTYsImV4cCI6MTY0NDE0OTAxNn0.a7hdkh7IVSvYD9WqfvJOfHUDAhjOdwThYizfCRzitCA
+###
+POST  http://localhost:3003/loginsystem/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "rizki subhandani",
+    "email" : "rizki123@gmail.com",
+    "password" : "123456",
+    "confPassword" : "123456"
+}
+###
+POST  http://localhost:3003/loginsystem/api/users/login HTTP/1.1
+Content-Type: application/json
+{
+    "email" : "rizki123@gmail.com",
+    "password" : "123456"
+}
